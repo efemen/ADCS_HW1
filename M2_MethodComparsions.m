@@ -47,4 +47,16 @@ angles1 = F4_MatrixAngleNormalizerDeg(F7_DCM2Euler313(DCM2000));
 angles2 = F4_MatrixAngleNormalizerDeg(F7_DCM2Euler313(DCM4000));
 angles3 = F4_MatrixAngleNormalizerDeg(F7_DCM2Euler313(DCM6000));
 
+T = array2table(angles1);
+filename = 'DCM_Angles.xlsx';
+T.Properties.VariableNames = ["Theta 1 deg","Theta 2 deg", "Theta 3 deg"];
+writetable(T,filename,'Sheet',1,'Range','A1')
+
+T = array2table(angles2);
+T.Properties.VariableNames = ["Theta 1 deg","Theta 2 deg", "Theta 3 deg"];
+writetable(T,filename,'Sheet',2,'Range','A1')
+
+T = array2table(angles3);
+T.Properties.VariableNames = ["Theta 1 deg","Theta 2 deg", "Theta 3 deg"];
+writetable(T,filename,'Sheet',3,'Range','A1')
 

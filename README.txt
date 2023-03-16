@@ -6,6 +6,9 @@ This repository can also be accessed on https://github.com/efemen/ADCS_HW1/ in c
 This homework will not be graded due to the translation task option I have taken. 
 Therefore, I have tried to accomplish all the requirements of the guideline without writing a report.
 
+Files with initial letter F represent functions and M represent different cases to avoid cluttering.
+Just run the M0, M1 and M2 files to see the plots.
+
 Answers to Section D:
 - The expression given for mapping between body angular velocities and Euler angle rates in Section A is based on 3-2-1 sequence.
 However, the sequence used in Section C is 3-1-3.
